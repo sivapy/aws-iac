@@ -3,7 +3,7 @@ locals {
 }
 
 resource "aws_vpc" "proj1" {
-  cidr_block = "10.10.0.0/16"
+  cidr_block = "10.100.0.0/16"
 
   tags = {
     Name = "${local.stagging_env}_vpc1"
